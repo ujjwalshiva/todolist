@@ -1,0 +1,148 @@
+@font-face {
+  font-family: DM Sans;
+  src: url(DMSans-Regular.ttf);
+}
+
+
+* {
+  font-family: DM Sans;
+  box-sizing: border-box;
+  background: #1C66D1;
+  color: white;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  animation: slideInFromLeft ease 1s;
+  animation-iteration-count: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.top-bar {
+  text-align: center;
+  padding: 2rem;
+  font-size: 5vh;
+}
+
+#todoarea {
+  align-items: center;
+  justify-content: center;
+  overflow-wrap: break-word;
+  height: 100%;
+  width: auto;
+  margin: auto;
+}
+
+input {
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+  align-items: center;
+  width: 80%;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: #154ABA;  
+  -webkit-animation: blink 3s infinite alternate;
+  animation: blink 3s infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  100% {
+    box-shadow: 0 0 2px #fff, 0 0 10px rgb(207, 199, 199), 0 0 20px #074799, 0 0 30px #0b2eca,
+    0 0 40px #0b47ca, 0 0 50px #0b47ca;
+  }
+}
+
+@keyframes blink {
+  100% {
+    box-shadow: 0 0 2px #fff, 0 0 10px rgb(207, 199, 199), 0 0 20px #074799, 0 0 30px #0b2eca,
+    0 0 40px #0b47ca, 0 0 50px #0b47ca;
+  }
+}
+
+
+::placeholder {
+  color: grey;
+}
+
+ul {
+  list-style-type: none;
+  align-items: center;
+  display: inline;
+  margin-bottom: 100px;
+}
+
+ul li {
+  margin-bottom: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  font-size: 18px;
+  text-align: left;
+  background: white;
+  color: #154ABA;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+  position: relative;
+}
+
+ul .bi-check-lg, .bi-trash {
+  position: absolute;
+  cursor: pointer;
+  background: white;
+}
+
+ul .bi-check-lg {
+  right: 20vw;
+  color: #90ee90;
+}
+
+ul .bi-trash {
+  right: 15vw;
+  color: red;
+}
+
+ul .checked {
+  background: lightgreen;
+  text-decoration: line-through;
+  transition: .2s;
+}
+
+ul .checked .bi-check-lg, .checked .bi-trash {
+  background: lightgreen;
+}
+
+ul .checked .bi-check-lg {
+  color: white;
+}
+
+.credits {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px;
+  position:-webkit-sticky;
+  bottom:0px;
+  width: 100%;
+}

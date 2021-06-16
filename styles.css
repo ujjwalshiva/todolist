@@ -115,12 +115,12 @@ ul .bi-check-lg, .bi-trash {
 }
 
 ul .bi-check-lg {
-  right: 20vw;
+  right: 10vw;
   color: #90ee90;
 }
 
 ul .bi-trash {
-  right: 15vw;
+  right: 5vw;
   color: red;
 }
 
